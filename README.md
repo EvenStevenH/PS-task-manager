@@ -1,0 +1,5 @@
+## Overview
+
+To ensure unique keys for my list items, I rendered each task with `map` in my `TaskList` component and used the `task.id` as the `key` prop. It does not change between renders, which makes them a stable choice. For filter functionality, I made sure to use an empty state if there are no tasks to display, or if none of the filters apply. Finally, I handled state updates for task status changes through `handleStatusChange`, which reads the selected `e.target.value` and calls the parent function `onStatusChange`.
+
+A minor challenge was picking a direction to implement conditional rendering, and then keeping track of logic while adhering to TypeScript. I settled on using `switch` statements for a sort of dynamic styling, which added classes to elements through functions like `getPriorityClass`. Then, depending on each task's `task.description` and `task.priority`, its status dropdown, text displaying priority, and the task item itself would be styled accordingly.

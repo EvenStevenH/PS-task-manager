@@ -1,0 +1,138 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	/* text-align: center; */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+select {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.task-priority, .due-date {
+	font-weight: 600;
+}
+
+.task-item {
+	max-width: 500px;
+	border: black 1px solid;
+	padding: 1em 2em;
+	border-radius: 10px;
+	background-color: #000000;
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5em;
+}
+
+.deleteBtn {
+	color: red;
+}
+
+button,
+select {
+	transition: all 0.4s ease;
+}
+
+select:hover,
+select:focus,
+button:hover {
+	outline: orange solid 2px;
+}
+
+button:active {
+	background-color: red;
+}
+
+.task-description {
+	color: #9d9d9d;
+	margin-bottom: 1em;
+}
+
+.task-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8em;
+}
+
+.task-controls {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6em;
+	justify-content: center;
+}
+
+.task-filter {
+	margin: 1.5em 0;
+	display: flex;
+	gap: 2em;
+	justify-content: flex-start;
+}
+
+.input-section {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+
+/* task item left border */
+.priority-high {
+	border-left: 6px solid red;
+}
+
+.priority-medium {
+	border-left: 6px solid orange;
+}
+
+.priority-low {
+	border-left: 6px solid green;
+}
+
+.task-completed {
+	opacity: 0.6;
+	text-decoration: line-through;
+}
+
+/* task dropdown's colors */
+.task-input-pending {
+	background-color: #fef9c2;
+	color: #894b39;
+}
+
+.task-input-in-progress {
+	background-color: rgb(243, 213, 156);
+}
+
+.task-input-completed {
+	color: green;
+}
+
+/* task's priority text colors  */
+.priority-style-high {
+	color: red;
+}
+
+.priority-style-medium {
+	color: orange;
+}
+
+.priority-style-low {
+	color: #00BF00;
+}
