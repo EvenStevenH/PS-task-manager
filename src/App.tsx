@@ -7,7 +7,7 @@ import "./App.css";
 const initialTasks: Task[] = [
 	{
 		id: "1",
-		title: "Practice Song",
+		title: "Practice song",
 		description: 'Learning to sing "I Thought I Saw Your Face Today" by She & Him while playing guitar.',
 		status: "pending",
 		priority: "low",
@@ -15,7 +15,7 @@ const initialTasks: Task[] = [
 	},
 	{
 		id: "2",
-		title: "Drink Water",
+		title: "Drink water",
 		description: "I need hydration... I think.",
 		status: "in-progress",
 		priority: "medium",
